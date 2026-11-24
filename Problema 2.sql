@@ -1,4 +1,4 @@
--- 2. Registrar las siembras realizadas, incluyendo fecha y cantidad
+-- 2.
 
 CREATE TABLE siembra (
     id_siembra INT AUTO_INCREMENT PRIMARY KEY,
@@ -10,7 +10,7 @@ CREATE TABLE siembra (
     FOREIGN KEY (id_cultivo) REFERENCES cultivo(id_cultivo)
 );
 
--- INSERTAR DATOS EN LA TABLA SIEMBRA
+-- datos
 
 INSERT INTO siembra (id_parcela, id_cultivo, fecha_siembra, cantidad)
 VALUES
@@ -35,6 +35,6 @@ VALUES
 (10, 9, '2026-07-10', 85),
 (10, 10, '2026-07-15', 45);
 
--- MOSTRAR LOS DATOS REGISTRADOS
+-- mostrar
 
 SELECT * FROM siembra;
